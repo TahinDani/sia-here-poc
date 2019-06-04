@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+	<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+	<link rel="stylesheet" href="marker_on_map.css">
+</head>
+
+<body>
+	<div id="main">
+		<div id="map" style="width: 60%; height: 100vh; background: grey"></div>
+		<form onsubmit="placeMarker()">
+			<input type="text" name="coordinates" placeholder="Lat, Lng">
+			<br>
+			<button type="submit">Show</button>
+		</form>
+	</div>
+
+	<script src="marker_on_map.js"></script>
+</body>
+
+</html>
